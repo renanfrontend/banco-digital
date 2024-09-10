@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { useForm } from 'react-hook-form';
+import { addTransaction } from './features/transactions/transactionsSlice';
+import CustomInput from '../src/components/Input';
+import CustomButton from '../src/components/Button';
 
-function App() {
+function TransactionForm() {
+  const dispatch = useDispatch();
+  const { register, handleSubmit } = useForm();
+
+  const onSubmit = (data) => {
+    dispatch(addTransaction(data));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <CustomInput label="Tipo" {...register('type')} />
+      <CustomInput label="Valor" type="number" {...register('amount')} />
+      <CustomInput label="Data" type="date" {...register('date')} />
+      {/* Adicione outros campos conforme necessário */}
+      <CustomButton type="submit">Realizar Transação</CustomButton>
+    </form>
   );
 }
 
-export default App;
+export default TransactionForm;
