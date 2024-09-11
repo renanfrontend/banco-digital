@@ -21,7 +21,7 @@ const DarkTextField = styled(TextField)({
       borderColor: 'lightblue', // Borda azul claro quando focado
     },
     '& .MuiInputBase-input': {
-      color: 'white', // Texto branco no modo dark
+      color: 'black', // Texto branco no modo dark
     },
     '& label': {
       color: 'gray', // Cor do label em cinza

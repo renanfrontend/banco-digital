@@ -1,5 +1,5 @@
 import React from 'react';
-import TransactionForm from '../features/transactions/TransactionForm';
+import TransactionForm from '../features/transactions/transactionForm';
 
 function Transactions() {
   return (

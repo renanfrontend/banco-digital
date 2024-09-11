@@ -3,13 +3,13 @@ import axios from 'axios';
 
 // Async Thunk para buscar transações
 export const fetchTransactions = createAsyncThunk('transactions/fetchTransactions', async () => {
-  const response = await axios.get('/transactions'); // Substitua pela URL da sua API
+  const response = await axios.get('http://localhost:3000/transactions'); // Endpoint correto
   return response.data;
 });
 
 // Async Thunk para adicionar uma transação
 export const addTransaction = createAsyncThunk('transactions/addTransaction', async (transactionData) => {
-  const response = await axios.post('/transactions', transactionData);
+  const response = await axios.post('http://localhost:3000/transactions', transactionData); // Endpoint correto
   return response.data;
 });
 

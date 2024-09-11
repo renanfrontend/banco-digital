@@ -1,41 +1,68 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "name": "João Silva",
-        "email": "joao@email.com",
-        "password": "senha123",
-        "balance": 5000.00
-      },
-      {
-        "id": 2,
-        "name": "Maria Santos",
-        "email": "maria@email.com",
-        "password": "senha456",
-        "balance": 10000.00
-      }
-    ],
-    "transactions": [
-      {
-        "id": 1,
-        "userId": 1,
-        "type": "TED",
-        "amount": -200.00,
-        "date": "2023-09-05T10:30:00Z"
-      },
-      {
-        "id": 2,
-        "userId": 1,
-        "type": "PIX",
-        "amount": 500.00,
-        "date": "2023-09-08T15:15:00Z"
-      },
-      {
-        "id": 3,
-        "userId": 2,
-        "type": "TED",
-        "amount": -1000.00,
-        "date": "2023-08-20T08:45:00Z"
-      }
-    ]
-  }
+  "users": [
+    {
+      "id": "1",
+      "name": "João Silva",
+      "email": "joao@email.com",
+      "password": "senha123",
+      "balance": 5000
+    },
+    {
+      "id": "2",
+      "name": "Maria Santos",
+      "email": "maria@email.com",
+      "password": "senha456",
+      "balance": 10000
+    }
+  ],
+  "transactions": [
+    {
+      "id": "1",
+      "userId": 1,
+      "type": "TED",
+      "amount": -200,
+      "date": "2023-09-05T10:30:00Z"
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "type": "PIX",
+      "amount": 500,
+      "date": "2023-09-08T15:15:00Z"
+    },
+    {
+      "id": "3",
+      "userId": 2,
+      "type": "TED",
+      "amount": -1000,
+      "date": "2023-08-20T08:45:00Z"
+    },
+    {
+      "id": "e62b"
+    },
+    {
+      "id": "ad0c"
+    },
+    {
+      "id": "d9d4"
+    },
+    {
+      "id": "8b0b"
+    },
+    {
+      "id": "7092"
+    },
+    {
+      "id": "24fe"
+    },
+    {
+      "id": "4b49"
+    },
+    {
+      "id": "d4cb"
+    },
+    {
+      "id": "722d"
+    }
+  ]
+}
